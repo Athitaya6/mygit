@@ -5,6 +5,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
+import pickle
+
 
 st.image("./pic/1.jpg")
 
@@ -54,7 +56,21 @@ sp_len=st.number_input("กรุณาเลือกข้อมูล sepal.l
 sp_wd=st.number_input("กรุณาเลือกข้อมูล sepal.width")
 
 if st.button("ทำนายผล"):
-   st.markdown("ใส่โมเดล")
+   #st.markdown("ใส่โมเดล")
+   
+    pickle_in=open('./model/Knn_model1.pkl','rb')
+    knnModel1=pickle.load(pickle_in)
+
+    input_data =  (7,	1,	2,	1)
+
+    # changing the input_data to numpy array
+    input_data_as_numpy_array = np.asarray(input_data)
+    # reshape the array as we are predicting for one instance
+    input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
+
+    prediction = knnModel1.predict(input_data_reshaped)
+    st.write(prediction)
+
    st.button("ไม่แสดงข้อมูล")
 else:
     st.write("ไม่แสดงข้อมูล")
