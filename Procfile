@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run my_app.py --server.port=8051
+web: sh setup.sh && streamlit run my_app.py 
