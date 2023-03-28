@@ -59,7 +59,7 @@ if st.button("ทำนายผล"):
    #st.markdown("ใส่โมเดล")
    
     pickle_in=open('./model/Knn_model1.pkl','rb')
-    knnModel1=pickle.load(pickle_in)
+    KnnModel1=pickle.load(pickle_in)
 
     input_data =  (7,	1,	2,	1)
 
