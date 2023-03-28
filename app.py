@@ -7,7 +7,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import pickle
 
-import sklearn
+
 
 st.image("./pic/1.jpg")
 

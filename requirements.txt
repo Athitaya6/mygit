@@ -9,3 +9,4 @@ plotly==5.9.0
 openpyxl
 streamlit_ace
 pyngrok
+pickle
