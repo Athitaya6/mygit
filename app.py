@@ -71,6 +71,6 @@ if st.button("ทำนายผล"):
     prediction = knnModel1.predict(input_data_reshaped)
     st.write(prediction)
 
-   st.button("ไม่แสดงข้อมูล")
+    st.button("ไม่แสดงข้อมูล")
 else:
     st.write("ไม่แสดงข้อมูล")
