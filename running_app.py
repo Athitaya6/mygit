@@ -1,0 +1,1 @@
+!steamlit run app.py &>/dev/null&
