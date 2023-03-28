@@ -7,8 +7,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 import pickle
 
-
-
 st.image("./pic/1.jpg")
 
 html_8 = """
