@@ -7,6 +7,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import pickle
 
+from sklearn.neighbors import KNeighborsClassifier
 
 st.image("./pic/1.jpg")
 
